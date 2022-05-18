@@ -114,8 +114,34 @@
     var stringF = "eGG";
 
     var stringQ = "What, you egg?";
-
+var win = function() {
+    	if(redCorrect > 23) {
+      fill(255,0,0);
+      rect(0,0,500,500);
+      }
+      if(blueCorrect > 23) {
+      fill(0,0,255);
+      rect(0,0,500,500);
+      }
+      if(greenCorrect > 23){
+      fill(0,255,0);
+      rect(0,0,500,500);
+      }
+      if(yellowCorrect > 23){
+      fill(255,255,0);
+      rect(0,0,500,500);
+      }
+      if(purpleCorrect > 23){
+      fill(255,0,255);
+      rect(0,0,500,500);
+      }
+    }
+    
     draw = function() {
+          
+ background(255, 255, 255);
+ win();
+ 
       if (qCount === 1) {
         stringA = "Goody";
         stringB = "Premack"; //
@@ -1732,7 +1758,6 @@
         playRedX = boxDim / 2 - 15 + boxDim;
       } else if (redCorrect === 24) {
         playRedX = boxDim / 2 - 15;
-        redCorrect = 0;
       }
 
       if (greenCorrect === 1) {
@@ -1783,7 +1808,6 @@
         playGreenX = boxDim / 2 + boxDim;
       } else if (greenCorrect === 24) {
         playGreenX = boxDim / 2;
-        greenCorrect = 0;
       }
 
       if (blueCorrect === 1) {
@@ -1834,7 +1858,6 @@
         playBlueX = boxDim / 2 + 15 + boxDim;
       } else if (blueCorrect === 24) {
         playBlueX = boxDim / 2 + 15;
-        blueCorrect = 0;
       }
 
       if (yellowCorrect === 1) {
@@ -1885,7 +1908,6 @@
         playYellowX = boxDim / 2 + boxDim;
       } else if (yellowCorrect === 24) {
         playYellowX = boxDim / 2;
-        yellowCorrect = 0;
       }
 
       if (purpleCorrect === 1) {
@@ -1936,7 +1958,6 @@
         playPurpleX = boxDim / 2 + boxDim;
       } else if (purpleCorrect === 24) {
         playPurpleX = boxDim / 2;
-        purpleCorrect = 0;
       }
 
       if (redX > (right / 2) - 120 && redX < (right / 2) - 120 + 60 && redY > (height / 2) - 70 && redY < (height / 2) - 30) {
@@ -2097,7 +2118,6 @@
 
       //replicate movement for all four others, then questions
 
-      background(255, 255, 255);
 
       fill(255, 255, 255);
       stroke(0, 0, 0);
