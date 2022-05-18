@@ -1,4 +1,4 @@
-var sketchProc = function(processingInstance) {
+ var sketchProc = function(processingInstance) {
 
   var qCount = 1;
 
@@ -114,485 +114,464 @@ var sketchProc = function(processingInstance) {
     var stringF = "eGG";
 
     var stringQ = "What, you egg?";
-    
-    var win = function() {
-    	if(redCorrect > 23) {
-      fill(255,0,0);
-      rect(0,0,500,500);
-      }
-      if(blueCorrect > 23) {
-      fill(0,0,255);
-      rect(0,0,500,500);
-      }
-      if(greenCorrect > 23){
-      fill(0,255,0);
-      rect(0,0,500,500);
-      }
-      if(yellowCorrect > 23){
-      fill(255,255,0);
-      rect(0,0,500,500);
-      }
-      if(purpleCorrect > 23){
-      fill(255,0,255);
-      rect(0,0,500,500);
-      }
-    }
 
     draw = function() {
-    background(255, 255, 255);
-		win();
-    
-    
       if (qCount === 1) {
-        stringA = " API "; //
-        stringB = " IRS ";
-        stringC = " TCP ";
-        stringD = " FRE ";
-        stringE = " LES ";
-        stringF = " CIA ";
-        stringQ = "A library of procedures"
+        stringA = "Goody";
+        stringB = "Premack"; //
+        stringC = "Wilkes";
+        stringD = "Hershey";
+        stringE = "Kell";
+        stringF = "Briggs";
+        stringQ = "Principle states bait must be liked"
       }
       if (qCount === 2) {
-        stringA = " Egg ";
-        stringB = " Byte ";
-        stringC = " LLC ";
-        stringD = " Binit ";
-        stringE = " Vint ";
-        stringF = " Bit "; //
-        stringQ = "A Binary Digit";
+        stringA = "Diabetes";
+        stringB = "Cataract";
+        stringC = "Glaucoma";
+        stringD = "Stye";
+        stringE = "Detachment"; //
+        stringF = "Crack";
+        stringQ = "Blindness from retinal trauma";
       }
       if (qCount === 3) {
-        stringA = " Eite ";
-        stringB = " Byte "; //
-        stringC = " 8bit ";
-        stringD = " Crit ";
-        stringE = " Bite ";
-        stringF = " Beyt ";
-        stringQ = "A sequence of 8 bits";
+        stringA = "Conformity";
+        stringB = "Groupthink";
+        stringC = "Obedience";
+        stringD = "Polarize";//
+        stringE = "Deindividuate";
+        stringF = "Calm";
+        stringQ = "Extreme actions in groups";
       }
       if (qCount === 4) {
-        stringA = "Datwo";
-        stringB = "Twodata";
-        stringC = "Dadata";
-        stringD = "Datameta";
-        stringE = "Metadata"; //
-        stringF = "Datadata";
-        stringQ = "Data about data";
+        stringA = "Ecstasy";//
+        stringB = "Crack";
+        stringC = "Meth";
+        stringD = "Mushrooms";
+        stringE = "SSRIs";
+        stringF = "Prozac";
+        stringQ = "Amphetamine and Mild Hallucinogen";//
       }
       if (qCount === 5) {
-        stringA = "Set";
-        stringB = "Packet";
-        stringC = "Library"; //
-        stringD = "Package";
-        stringE = "Rulebook";
-        stringF = "Way";
-        stringQ = "Collection of common procedures";
+        stringA = "Canal";
+        stringB = "Cochlea";
+        stringC = "Pinna";//
+        stringD = "Eardrum";
+        stringE = "Nerve";
+        stringF = "Cornea";
+        stringQ = "Collects incoming sound";
       }
       if (qCount === 6) {
-        stringA = "Internet";
-        stringB = "WWW"; //
-        stringC = "HTTP";
-        stringD = "Book";
-        stringE = "HTML";
-        stringF = "HTTPS";
-        stringQ = "System of interlinked pages";
+        stringA = "Course";
+        stringB = "Set";
+        stringC = "Shtick";
+        stringD = "Plan";
+        stringE = "Project";
+        stringF = "Schema";//
+        stringQ = "Mental representation of the world";
       }
       if (qCount === 7) {
-        stringA = "Bit";
-        stringB = "Cracker";
-        stringC = "Byte";
-        stringD = "Tracker";
-        stringE = "Cookie"; //
-        stringF = "Chip";
-        stringQ = "Bit of tracking information";
+        stringA = "Erikson";
+        stringB = "Freud";//
+        stringC = "Jung";
+        stringD = "Adler";
+        stringE = "Wilkes";
+        stringF = "Bergman";
+        stringQ = "Studied inner conflict and unconscious";
       }
       if (qCount === 8) {
-        stringA = "Phishing"; //
-        stringB = "Trick";
-        stringC = "Hijack";
-        stringD = "Takeover";
-        stringE = "Theft";
-        stringF = "Override";
-        stringQ = "Deception attack";
+        stringA = "Mean";
+        stringB = "Median";
+        stringC = "Mode";
+        stringD = "Modulus";
+        stringE = "Inferential"; //
+        stringF = "Portion";
+        stringQ = "Data drawn from a random subset";
       }
       if (qCount === 9) {
-        stringA = "Lossing";
-        stringB = "Lossful";
-        stringC = "Lossless";
-        stringD = "Lossy"; //
-        stringE = "Lossful";
-        stringF = "Lossed";
-        stringQ = "Discards Compressed Data";
+        stringA = "Bandura";//
+        stringB = "Kohler";
+        stringC = "Tolman";
+        stringD = "Skinner";
+        stringE = "Pavlov";
+        stringF = "Freud";
+        stringQ = "Studied the modeling of behavior";
       }
       if (qCount === 10) {
-        stringA = "Lossly";
-        stringB = "Lossy";
-        stringC = "Lossing";
-        stringD = "Lossful";
-        stringE = "Lossed";
-        stringF = "Lossless"; //
-        stringQ = "Preserves Compressed Data";
+        stringA = "20%";
+        stringB = "30%";
+        stringC = "40%";
+        stringD = "50%"; //
+        stringE = "60%";
+        stringF = "70%";
+        stringQ = "Absolute threshold detects this often";
       }
       if (qCount === 11) {
-        stringA = "Followup";
-        stringB = "Parallel"; //
-        stringC = "LLC";
-        stringD = "Linear";
-        stringE = "HTTPS";
-        stringF = "Sequence";
-        stringQ = "Simultaneous processing on multiple fronts";
+        stringA = "Jammed";
+        stringB = "Fluid";
+        stringC = "Constant";
+        stringD = "Static";
+        stringE = "Reversible";
+        stringF = "Irreversible";//
+        stringQ = "Inability to percieve an inverse";
       }
       if (qCount === 12) {
-        stringA = "Share";
-        stringB = "Citizen"; //
-        stringC = "Everyone";
-        stringD = "Open";
-        stringE = "Popular";
-        stringF = "Group";
-        stringQ = "Crowdsourced scientific endeavors";
+        stringA = "Meth";//
+        stringB = "Crack";
+        stringC = "Mushrooms";
+        stringD = "Tobacco";
+        stringE = "Alcohol";
+        stringF = "Lean";
+        stringQ = "Drug causing energy and euphoria";
       }
       if (qCount === 13) {
-        stringA = "FFE";
-        stringB = "UDP";
-        stringC = "HTP";
-        stringD = "XYZ";
-        stringE = "TCP"; //
-        stringF = "WWW";
-        stringQ = "Reliable transfer, error checking";
+        stringA = "Join";
+        stringB = "Aid";
+        stringC = "Participant";//
+        stringD = "Chace";
+        stringE = "Associate";
+        stringF = "Assist";
+        stringQ = "Observe by doing";
       }
       if (qCount === 14) {
-        stringA = "FTC";
-        stringB = "EGE";
-        stringC = "HTML";
-        stringD = "DDE";
-        stringE = "HTTP";
-        stringF = "UDP"; //
-        stringQ = "Unreliable transfer, no checking";
+        stringA = "Case";
+        stringB = "Example";
+        stringC = "Specify";
+        stringD = "Spread";
+        stringE = "Generalize";//
+        stringF = "Broaden";
+        stringQ = "One percieved as all";
       }
       if (qCount === 15) {
-        stringA = "Scalable"; //
-        stringB = "Growy";
-        stringC = "Growful";
-        stringD = "Scale";
-        stringE = "Newness";
-        stringF = "Meeting";
-        stringQ = "Capacity to accomodate growth";
+        stringA = "Cones";
+        stringB = "Rods";//
+        stringC = "Retina";
+        stringD = "Fovea";
+        stringE = "Iris";
+        stringF = "Pupil";
+        stringQ = "Black and white perception";
       }
       if (qCount === 16) {
-        stringA = "PLT";
-        stringB = "Strength";
-        stringC = "Integrity";
-        stringD = "Capacity";
-        stringE = "Reliable"; //
-        stringF = "Testing";
-        stringQ = "Capacity to overcome component failure";
+        stringA = "Secure";
+        stringB = "Cozy";
+        stringC = "Comfort";
+        stringD = "Distaste";
+        stringE = "Concern";
+        stringF = "Phobia";//
+        stringQ = "Specific fear";
       }
       if (qCount === 17) {
-        stringA = "BES";
-        stringB = "LDS";
-        stringC = "IP"; //
-        stringD = "TCP";
-        stringE = "UDP";
-        stringF = "HCC";
-        stringQ = "System of web identification";
+        stringA = "Walking";
+        stringB = "Talking";
+        stringC = "Sleeping";
+        stringD = "Thinking";
+        stringE = "Crying";
+        stringF = "Death";
+        stringQ = "Night terrors may lead to sleep...";
       }
       if (qCount === 18) {
-        stringA = "Beans";
-        stringB = "Wyatt*";
-        stringC = "Crack";
-        stringD = "Logic"; //
-        stringE = "Static";
-        stringF = "Flow";
-        stringQ = "Error causing unexpected program behavior";
+        stringA = "0.95";
+        stringB = "-0.96";//
+        stringC = "0.4";
+        stringD = "-0.32";
+        stringE = ".0100";
+        stringF = "0.52";
+        stringQ = "Strongest relationship";
       }
       if (qCount === 19) {
-        stringA = "Protocol";
-        stringB = "Syntax"; //
-        stringC = "Language";
-        stringD = "System";
-        stringE = "Guide";
-        stringF = "More";
-        stringQ = "Error violating language protocols";
+        stringA = "Adler";
+        stringB = "Bergman";
+        stringC = "Hubman";
+        stringD = "Hering";//
+        stringE = "Berger";
+        stringF = "Jung";
+        stringQ = "Said one color inhibits another";
       }
       if (qCount === 20) {
-        stringA = "Over";
-        stringB = "Flowover";
-        stringC = "Top";
-        stringD = "Exceed";
-        stringE = "Overflow"; //
-        stringF = "Max";
-        stringQ = "Error exceeding maximum system bits";
+        stringA = "Discriminate";
+        stringB = "Perception";
+        stringC = "Prejudice";
+        stringD = "Thought";
+        stringE = "Stereotype";//
+        stringF = "Context";
+        stringQ = "General idea of a group";
       }
       if (qCount === 21) {
-        stringA = "Digital"; //
-        stringB = "Analog";
-        stringC = "Constant";
-        stringD = "Temp";
-        stringE = "Current";
-        stringF = "Nowish";
-        stringQ = "Data sampled over time";
+        stringA = "Harlow";
+        stringB = "Piaget";
+        stringC = "Skinner";
+        stringD = "Bergman";
+        stringE = "Ainsworth";
+        stringF = "Erikson";//
+        stringQ = "Said experiences built personality";
       }
       if (qCount === 22) {
-        stringA = "Digital";
-        stringB = "Analog"; //
-        stringC = "Wrong";
-        stringD = "Constant";
-        stringE = "Current";
-        stringF = "Sample";
-        stringQ = "Data assessed continuously";
+        stringA = "Serotonin";
+        stringB = "Cortisol";
+        stringC = "GABA"; //
+        stringD = "Epinephrine";
+        stringE = "Anandamide";
+        stringF = "Glutamate";
+        stringQ = "The reason smokers become anxious";
       }
       if (qCount === 23) {
-        stringA = "Optimize";
-        stringB = "Adequate";
-        stringC = "Debug";
-        stringD = "Lexile";
-        stringE = "Heuristic"; //
-        stringF = "TCP";
-        stringQ = "Find best solution to an extensive issue";
+        stringA = "Mean";//
+        stringB = "Median";
+        stringC = "Mode";
+        stringD = "Roughly";
+        stringE = "Average";
+        stringF = "Chance";
+        stringQ = "Average distribution of values";
       }
       if (qCount === 24) {
-        stringA = "KGB";
-        stringB = "CIA";
-        stringC = "HTTP"; //
-        stringD = "SSA";
-        stringE = "JS";
-        stringF = "HTML";
-        stringQ = "Web operation protocol";
+        stringA = "Cornea";
+        stringB = "Retina";//
+        stringC = "Iris";
+        stringD = "Pupil";
+        stringE = "Nerve";
+        stringF = "Cone";
+        stringQ = "Holds visual sensory receptors";
       }
       if (qCount === 25) {
-        stringA = "Central";
-        stringB = "LLC";
-        stringC = "Soup";
-        stringD = "Camera";
-        stringE = "TCP";
-        stringF = "HTTPS"; //
-        stringQ = "Enhances security measures";
+        stringA = "Dissociate";
+        stringB = "Blame";
+        stringC = "Assert";
+        stringD = "Projection";//
+        stringE = "Suggest";
+        stringF = "Feel";
+        stringQ = "Ascribe bad actions to others";
       }
+
+      //application
+
       if (qCount === 26) {
-        stringA = "CSS";
-        stringB = "HTML"; //
-        stringC = "JS";
-        stringD = "C";
-        stringE = "XML";
-        stringF = "Python";
-        stringQ = "Language of web pages";
+        stringA = "Error";
+        stringB = "Projection";
+        stringC = "Confusion";
+        stringD = "Attribute";
+        stringE = "Blame";
+        stringF = "Displace"; //
+        stringQ = "John trips and blames his shoes";
       }
       if (qCount === 27) {
-        stringA = "XML";
-        stringB = "SVG";
-        stringC = "PNG";
-        stringD = "CSS"; //
-        stringE = "SCS";
-        stringF = "BPG";
-        stringQ = "Language of web aesthetics";
+        stringA = "Seasonal"; //
+        stringB = "Bipolar";
+        stringC = "Personal";
+        stringD = "Perceptive";
+        stringE = "Winter";
+        stringF = "Glum";
+        stringQ = "Hank becomes depressed in winter";
       }
       if (qCount === 28) {
-        stringA = "B";
-        stringB = "C-";
-        stringC = "C++";
-        stringD = "English";
-        stringE = "Python";
-        stringF = "JS"; //
-        stringQ = "Language of this";
+        stringA = "Discriminate"; 
+        stringB = "Bias";//
+        stringC = "Choice";
+        stringD = "Percieve";
+        stringE = "Truth";
+        stringF = "Watching";
+        stringQ = "Phil sees what he expects to";
       }
       if (qCount === 29) {
-        stringA = "Slow";
-        stringB = "30mph";
-        stringC = "Rate";
-        stringD = "C";
-        stringE = "Bandwidth";
-        stringF = "Blurd";
-        stringQ = "Top speed for data transmission";
+        stringA = "US";
+        stringB = "CS";
+        stringC = "UR";
+        stringD = "NR";
+        stringE = "CR"; //
+        stringF = "NS";
+        stringQ = "A dog salivates at the ring of a bell";
       }
       if (qCount === 30) {
-        stringA = "Bit";
-        stringB = "Byte";
-        stringC = "Modular"; //
-        stringD = "Chunk";
-        stringE = "Segment";
-        stringF = "Component";
-        stringQ = "Seperation of systems into independent subsets";
+        stringA = "Watcher";
+        stringB = "Sideline";
+        stringC = "Bystander";//
+        stringD = "Perception";
+        stringE = "Hopeful";
+        stringF = "Choice";
+        stringQ = "Effect shown in K Genovese Case";
       }
       if (qCount === 31) {
-        stringA = "Travel";
-        stringB = "Traversal"; //
-        stringC = "Progress";
-        stringD = "Speed";
-        stringE = "Rate";
-        stringF = "HTML";
-        stringQ = "Iteration of list items";
+        stringA = "Projection";
+        stringB = "Displace";
+        stringC = "Phobia";
+        stringD = "Dissociate";//
+        stringE = "Bipolar";
+        stringF = "Depersonalize";
+        stringQ = "Bill becomes Ian when stressed";
       }
       if (qCount === 32) {
-        stringA = "Bug";
-        stringB = "Forget";
-        stringC = "Course";
-        stringD = "Memory";
-        stringE = "Runtime"; //
-        stringF = "Proge";
-        stringQ = "Error from disordered memory";
+        stringA = "Stutter";
+        stringB = "Impairment";//
+        stringC = "Exception";
+        stringD = "Error";
+        stringE = "Stress";
+        stringF = "Incompetence";
+        stringQ = "Sam fails when being observed";
       }
       if (qCount === 33) {
-        stringA = "Eachy";
-        stringB = "Pear";
-        stringC = "Long";
-        stringD = "Linear"; //
-        stringE = "Binary";
-        stringF = "Tertiary";
-        stringQ = "Check each item to find desired output";
+        stringA = "Catatonia";//
+        stringB = "Stillness";
+        stringC = "Dour";
+        stringD = "Mania";
+        stringE = "Euphoria";
+        stringF = "Hyper";
+        stringQ = "Lee froze in place due to his illness";
       }
       if (qCount === 34) {
-        stringA = "Pear";
-        stringB = "Short";
-        stringC = "Binary"; //
-        stringD = "Twoy";
-        stringE = "Tickle";
-        stringF = "Eachy";
-        stringQ = "Half the list to find desired output";
+        stringA = "Phobia";
+        stringB = "Racism";
+        stringC = "Hate";
+        stringD = "Bias";
+        stringE = "Prejudice";//
+        stringF = "Discriminate";
+        stringQ = "James acts on a baseless dislike";
       }
       if (qCount === 35) {
-        stringA = "TCP";
-        stringB = "Glass";
-        stringC = "Tablet";
-        stringD = "PC";
-        stringE = "Fridge";
-        stringF = "Device"; //
-        stringQ = "Thing that can run a platform";
+        stringA = "Youth";
+        stringB = "Oblivious";
+        stringC = "Accomodation";//
+        stringD = "Error";
+        stringE = "Stupidity";
+        stringF = "Assumption";
+        stringQ = "A child sees a cow as a dog";
       }
       if (qCount === 36) {
-        stringA = "Network"; //
-        stringB = "CES";
-        stringC = "WWW";
-        stringD = "IP";
-        stringE = "Online";
-        stringF = "Matrix";
-        stringQ = "Things connected to transmit data";
+        stringA = "Same";
+        stringB = "Static";
+        stringC = "Fixed";
+        stringD = "Variable";//
+        stringE = "Changing";
+        stringF = "Fluid";
+        stringQ = "Tim checks the video from time to time";
       }
       if (qCount === 37) {
-        stringA = "Method";
-        stringB = "Protocol"; //
-        stringC = "Course";
-        stringD = "Plan";
-        stringE = "Way";
-        stringF = "Wae";
-        stringQ = "Agreed rules of functionality";
+        stringA = "Unhappy";
+        stringB = "Confusion";
+        stringC = "Dissociate";
+        stringD = "Seasonal";
+        stringE = "Bipolar";
+        stringF = "Depression";
+        stringQ = "Ellie was unhappy over two weeks";
       }
       if (qCount === 38) {
-        stringA = "Eggo";
-        stringB = "Secret";
-        stringC = "Private";
-        stringD = "Public";
-        stringE = "Symmetric"; //
-        stringF = "Mine";
-        stringQ = "Encryption with one key on both ends";
+        stringA = "PR"; //
+        stringB = "NR";
+        stringC = "PP";
+        stringD = "NP";
+        stringE = "UC";
+        stringF = "NC";
+        stringQ = "Sean was got a good thing for acting";
       }
       if (qCount === 39) {
-        stringA = "Private";
-        stringB = "Symmetric";
-        stringC = "Public"; //
-        stringD = "Vigenere";
-        stringE = "Enigma";
-        stringF = "Caesar";
-        stringQ = "Encryption with one hidden key and one open key";
+        stringA = "Geography";
+        stringB = "Locale";
+        stringC = "Nearness";
+        stringD = "Associate";
+        stringE = "Similarity";//
+        stringF = "Proximity";
+        stringQ = "John and Jill both like the same coffee";
       }
       if (qCount === 40) {
-        stringA = "RAP"; //
-        stringB = "In";
-        stringC = "Glitch";
-        stringD = "Bug";
-        stringE = "Intern";
-        stringF = "WWW";
-        stringQ = "Undesired connection which exposes private traffic";
+        stringA = "Hole";
+        stringB = "Trephine";
+        stringC = "Break";
+        stringD = "Snap";
+        stringE = "Cataract";
+        stringF = "Crevice";
+        stringQ = "Bob has a hole cut in his head";
       }
+
+      //real-world motion - judge
+
       if (qCount === 41) {
-        stringA = "Overflow";
-        stringB = "Phishing";
-        stringC = "Error";
-        stringD = "Virus"; //
-        stringE = "Glitch";
-        stringF = "Bug";
-        stringQ = "Self-propogating malware";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate the Babinski Reflex"; //press foot
       }
 
       if (qCount === 42) {
-        stringA = "Process";
-        stringB = "Way";
-        stringC = "Algorithm"; //
-        stringD = "Plan";
-        stringE = "Method";
-        stringF = "Course";
-        stringQ = "Generalized solution";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate the Rooting Reflex";
       }
       if (qCount === 43) {
-        stringA = "Twoary";
-        stringB = "Twoby";
-        stringC = "Binful";
-        stringD = "Decibal";
-        stringE = "Binary"; //
-        stringF = "Hex";
-        stringQ = "Base-Two Numeral System";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate the Moro Relfex";
       }
       if (qCount === 44) {
-        stringA = "Decimal";
-        stringB = "Hex"; //
-        stringC = "Binary";
-        stringD = "Hegs";
-        stringE = "Gress";
-        stringF = "Bent";
-        stringQ = "Base-Sixteen Numeral System";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate Displacement";
       }
       if (qCount === 45) {
-        stringA = "Tenary";
-        stringB = "Tex";
-        stringC = "Ero";
-        stringD = "Hex";
-        stringE = "Binary";
-        stringF = "Decimal";
-        stringQ = "Base-Ten Numeral System";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate Reaction Formation";
       }
       if (qCount === 46) {
-        stringA = "Boolean"; //
-        stringB = "Balse";
-        stringC = "Fue";
-        stringD = "Tralse";
-        stringE = "True";
-        stringF = "False";
-        stringQ = "True/False or Binary Decision";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate Projection";
       }
       if (qCount === 47) {
-        stringA = "Floaty";
-        stringB = "Egg";
-        stringC = "Big";
-        stringD = "Narp";
-        stringE = "Floating"; //
-        stringF = "Small";
-        stringQ = "Numbers with long, inane decimal points";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate Conventional Morality";
       }
       if (qCount === 48) {
-        stringA = "ETA";
-        stringB = "Distance";
-        stringC = "Length";
-        stringD = "Latency"; //
-        stringE = "Route";
-        stringF = "Trip";
-        stringQ = "Time for signal to reach destination";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate Object Permanence";
       }
       if (qCount === 49) {
-        stringA = "Copper";
-        stringB = "Fiber"; //
-        stringC = "WiFI";
-        stringD = "Cable";
-        stringE = "Shiny";
-        stringF = "Light";
-        stringQ = "Transfer of binary via light";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate Maturation";
       }
       if (qCount === 50) {
-        stringA = "HDP";
-        stringB = "WWW";
-        stringC = "IP";
-        stringD = "Sat";
-        stringE = "Web";
-        stringF = "WiFi"; //
-        stringQ = "Radio-based wireless networking";
+        stringA = "Yes";
+        stringB = "Yes";
+        stringC = "Yes";
+        stringD = "No";
+        stringE = "No";
+        stringF = "No";
+        stringQ = "Demonstrate Regression";
       }
       if (qCount === 51) {
         qCount = 1;
@@ -600,40 +579,6 @@ var sketchProc = function(processingInstance) {
 
       var check = function() {
         if (qCount === 1) {
-          if (red1 === 1) {
-            redCorrect += 1;
-          }
-          if (blue1 === 1) {
-            blueCorrect += 1;
-          }
-          if (green1 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow1 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple1 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 2) {
-          if (red6 === 1) {
-            redCorrect += 1;
-          }
-          if (blue6 === 1) {
-            blueCorrect += 1;
-          }
-          if (green6 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow6 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple6 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 3) {
           if (red2 === 1) {
             redCorrect += 1;
           }
@@ -650,7 +595,7 @@ var sketchProc = function(processingInstance) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 4) {
+        if (qCount === 2) {
           if (red5 === 1) {
             redCorrect += 1;
           }
@@ -664,6 +609,40 @@ var sketchProc = function(processingInstance) {
             yellowCorrect += 1;
           }
           if (purple5 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 3) {
+          if (red4 === 1) {
+            redCorrect += 1;
+          }
+          if (blue4 === 1) {
+            blueCorrect += 1;
+          }
+          if (green4 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow4 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple4 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 4) {
+          if (red1 === 1) {
+            redCorrect += 1;
+          }
+          if (blue1 === 1) {
+            blueCorrect += 1;
+          }
+          if (green1 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow1 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple1 === 1) {
             purpleCorrect += 1;
           }
         }
@@ -685,125 +664,40 @@ var sketchProc = function(processingInstance) {
           }
         }
         if (qCount === 6) {
-          if (red2 === 1) {
+          if (red6 === 1) {
             redCorrect += 1;
           }
-          if (blue2 === 1) {
+          if (blue6 === 1) {
             blueCorrect += 1;
           }
-          if (green2 === 1) {
+          if (green6 === 1) {
             greenCorrect += 1;
           }
-          if (yellow2 === 1) {
+          if (yellow6 === 1) {
             yellowCorrect += 1;
           }
-          if (purple2 === 1) {
+          if (purple6 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 7) {
-          if (red5 === 1) {
+          if (red2 === 1) {
             redCorrect += 1;
           }
-          if (blue5 === 1) {
+          if (blue2 === 1) {
             blueCorrect += 1;
           }
-          if (green5 === 1) {
+          if (green2 === 1) {
             greenCorrect += 1;
           }
-          if (yellow5 === 1) {
+          if (yellow2 === 1) {
             yellowCorrect += 1;
           }
-          if (purple5 === 1) {
+          if (purple2 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 8) {
-          if (red1 === 1) {
-            redCorrect += 1;
-          }
-          if (blue1 === 1) {
-            blueCorrect += 1;
-          }
-          if (green1 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow1 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple1 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 9) {
-          if (red4 === 1) {
-            redCorrect += 1;
-          }
-          if (blue4 === 1) {
-            blueCorrect += 1;
-          }
-          if (green4 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow4 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple4 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 10) {
-          if (red6 === 1) {
-            redCorrect += 1;
-          }
-          if (blue6 === 1) {
-            blueCorrect += 1;
-          }
-          if (green6 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow6 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple6 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 11) {
-          if (red2 === 1) {
-            redCorrect += 1;
-          }
-          if (blue2 === 1) {
-            blueCorrect += 1;
-          }
-          if (green2 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow2 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple2 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 12) {
-          if (red2 === 1) {
-            redCorrect += 1;
-          }
-          if (blue2 === 1) {
-            blueCorrect += 1;
-          }
-          if (green2 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow2 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple2 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 13) {
           if (red5 === 1) {
             redCorrect += 1;
           }
@@ -820,41 +714,24 @@ var sketchProc = function(processingInstance) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 14) {
-          if (red6 === 1) {
+        if (qCount === 9) {
+          if (red2 === 1) {
             redCorrect += 1;
           }
-          if (blue6 === 1) {
+          if (blue2 === 1) {
             blueCorrect += 1;
           }
-          if (green6 === 1) {
+          if (green2 === 1) {
             greenCorrect += 1;
           }
-          if (yellow6 === 1) {
+          if (yellow2 === 1) {
             yellowCorrect += 1;
           }
-          if (purple6 === 1) {
+          if (purple2 === 1) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 15) {
-          if (red1 === 1) {
-            redCorrect += 1;
-          }
-          if (blue1 === 1) {
-            blueCorrect += 1;
-          }
-          if (green1 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow1 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple1 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 16) {
+        if (qCount === 10) {
           if (red4 === 1) {
             redCorrect += 1;
           }
@@ -871,7 +748,41 @@ var sketchProc = function(processingInstance) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 17) {
+        if (qCount === 11) {
+          if (red6 === 1) {
+            redCorrect += 1;
+          }
+          if (blue6 === 1) {
+            blueCorrect += 1;
+          }
+          if (green6 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow6 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple6 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 12) {
+          if (red6 === 1) {
+            redCorrect += 1;
+          }
+          if (blue6 === 1) {
+            blueCorrect += 1;
+          }
+          if (green6 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow6 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple6 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 13) {
           if (red3 === 1) {
             redCorrect += 1;
           }
@@ -888,24 +799,24 @@ var sketchProc = function(processingInstance) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 18) {
-          if (red4 === 1) {
+        if (qCount === 14) {
+          if (red5 === 1) {
             redCorrect += 1;
           }
-          if (blue4 === 1) {
+          if (blue5 === 1) {
             blueCorrect += 1;
           }
-          if (green4 === 1) {
+          if (green5 === 1) {
             greenCorrect += 1;
           }
-          if (yellow4 === 1) {
+          if (yellow5 === 1) {
             yellowCorrect += 1;
           }
-          if (purple4 === 1) {
+          if (purple5 === 1) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 19) {
+        if (qCount === 15) {
           if (red2 === 1) {
             redCorrect += 1;
           }
@@ -919,6 +830,74 @@ var sketchProc = function(processingInstance) {
             yellowCorrect += 1;
           }
           if (purple2 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 16) {
+          if (red6 === 1) {
+            redCorrect += 1;
+          }
+          if (blue6 === 1) {
+            blueCorrect += 1;
+          }
+          if (green6 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow6 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple6 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 17) {
+          if (red1 === 1) {
+            redCorrect += 1;
+          }
+          if (blue1 === 1) {
+            blueCorrect += 1;
+          }
+          if (green1 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow1 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple1 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 18) {
+          if (red2 === 1) {
+            redCorrect += 1;
+          }
+          if (blue2 === 1) {
+            blueCorrect += 1;
+          }
+          if (green2 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow2 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple2 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 19) {
+          if (red4 === 1) {
+            redCorrect += 1;
+          }
+          if (blue4 === 1) {
+            blueCorrect += 1;
+          }
+          if (green4 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow4 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple4 === 1) {
             purpleCorrect += 1;
           }
         }
@@ -940,57 +919,23 @@ var sketchProc = function(processingInstance) {
           }
         }
         if (qCount === 21) {
-          if (red1 === 1) {
+          if (red6 === 1) {
             redCorrect += 1;
           }
-          if (blue1 === 1) {
+          if (blue6 === 1) {
             blueCorrect += 1;
           }
-          if (green1 === 1) {
+          if (green6 === 1) {
             greenCorrect += 1;
           }
-          if (yellow1 === 1) {
+          if (yellow6 === 1) {
             yellowCorrect += 1;
           }
-          if (purple1 === 1) {
+          if (purple6 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 22) {
-          if (red2 === 1) {
-            redCorrect += 1;
-          }
-          if (blue2 === 1) {
-            blueCorrect += 1;
-          }
-          if (green2 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow2 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple2 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 23) {
-          if (red5 === 1) {
-            redCorrect += 1;
-          }
-          if (blue5 === 1) {
-            blueCorrect += 1;
-          }
-          if (green5 === 1) {
-            greenCorrect += 1;
-          }
-          if (yellow5 === 1) {
-            yellowCorrect += 1;
-          }
-          if (purple5 === 1) {
-            purpleCorrect += 1;
-          }
-        }
-        if (qCount === 24) {
           if (red3 === 1) {
             redCorrect += 1;
           }
@@ -1007,24 +952,24 @@ var sketchProc = function(processingInstance) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 25) {
-          if (red6 === 1) {
+        if (qCount === 23) {
+          if (red1 === 1) {
             redCorrect += 1;
           }
-          if (blue6 === 1) {
+          if (blue1 === 1) {
             blueCorrect += 1;
           }
-          if (green6 === 1) {
+          if (green1 === 1) {
             greenCorrect += 1;
           }
-          if (yellow6 === 1) {
+          if (yellow1 === 1) {
             yellowCorrect += 1;
           }
-          if (purple6 === 1) {
+          if (purple1 === 1) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 26) {
+        if (qCount === 24) {
           if (red2 === 1) {
             redCorrect += 1;
           }
@@ -1041,7 +986,7 @@ var sketchProc = function(processingInstance) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 27) {
+        if (qCount === 25) {
           if (red4 === 1) {
             redCorrect += 1;
           }
@@ -1058,7 +1003,7 @@ var sketchProc = function(processingInstance) {
             purpleCorrect += 1;
           }
         }
-        if (qCount === 28) {
+        if (qCount === 26) {
           if (red6 === 1) {
             redCorrect += 1;
           }
@@ -1072,6 +1017,40 @@ var sketchProc = function(processingInstance) {
             yellowCorrect += 1;
           }
           if (purple6 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 27) {
+          if (red1 === 1) {
+            redCorrect += 1;
+          }
+          if (blue1 === 1) {
+            blueCorrect += 1;
+          }
+          if (green1 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow1 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple1 === 1) {
+            purpleCorrect += 1;
+          }
+        }
+        if (qCount === 28) {
+          if (red2 === 1) {
+            redCorrect += 1;
+          }
+          if (blue2 === 1) {
+            blueCorrect += 1;
+          }
+          if (green2 === 1) {
+            greenCorrect += 1;
+          }
+          if (yellow2 === 1) {
+            yellowCorrect += 1;
+          }
+          if (purple2 === 1) {
             purpleCorrect += 1;
           }
         }
@@ -1110,342 +1089,345 @@ var sketchProc = function(processingInstance) {
           }
         }
         if (qCount === 31) {
-          if (red2 === 1) {
+          if (red4 === 1) {
             redCorrect += 1;
           }
-          if (blue2 === 1) {
+          if (blue4 === 1) {
             blueCorrect += 1;
           }
-          if (green2 === 1) {
+          if (green4 === 1) {
             greenCorrect += 1;
           }
-          if (yellow2 === 1) {
+          if (yellow4 === 1) {
             yellowCorrect += 1;
           }
-          if (purple2 === 1) {
+          if (purple4 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 32) {
-          if (red5 === 1) {
+          if (red2 === 1) {
             redCorrect += 1;
           }
-          if (blue5 === 1) {
+          if (blue2 === 1) {
             blueCorrect += 1;
           }
-          if (green5 === 1) {
+          if (green2 === 1) {
             greenCorrect += 1;
           }
-          if (yellow5 === 1) {
+          if (yellow2 === 1) {
             yellowCorrect += 1;
           }
-          if (purple5 === 1) {
+          if (purple2 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 33) {
-          if (red4 === 1) {
+          if (red1 === 1) {
             redCorrect += 1;
           }
-          if (blue4 === 1) {
+          if (blue1 === 1) {
             blueCorrect += 1;
           }
-          if (green4 === 1) {
+          if (green1 === 1) {
             greenCorrect += 1;
           }
-          if (yellow4 === 1) {
+          if (yellow1 === 1) {
             yellowCorrect += 1;
           }
-          if (purple4 === 1) {
+          if (purple1 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 34) {
-          if (red3 === 1) {
+          if (red5 === 1) {
             redCorrect += 1;
           }
-          if (blue3 === 1) {
+          if (blue5 === 1) {
             blueCorrect += 1;
           }
-          if (green3 === 1) {
+          if (green5 === 1) {
             greenCorrect += 1;
           }
-          if (yellow3 === 1) {
+          if (yellow5 === 1) {
             yellowCorrect += 1;
           }
-          if (purple3 === 1) {
+          if (purple5 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 35) {
-          if (red6 === 1) {
+          if (red3 === 1) {
             redCorrect += 1;
           }
-          if (blue6 === 1) {
+          if (blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green6 === 1) {
+          if (green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow6 === 1) {
+          if (yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple6 === 1) {
+          if (purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 36) {
-          if (red1 === 1) {
+          if (red4 === 1) {
             redCorrect += 1;
           }
-          if (blue1 === 1) {
+          if (blue4 === 1) {
             blueCorrect += 1;
           }
-          if (green1 === 1) {
+          if (green4 === 1) {
             greenCorrect += 1;
           }
-          if (yellow1 === 1) {
+          if (yellow4 === 1) {
             yellowCorrect += 1;
           }
-          if (purple1 === 1) {
+          if (purple4 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 37) {
-          if (red2 === 1) {
+          if (red6 === 1) {
             redCorrect += 1;
           }
-          if (blue2 === 1) {
+          if (blue6 === 1) {
             blueCorrect += 1;
           }
-          if (green2 === 1) {
+          if (green6 === 1) {
             greenCorrect += 1;
           }
-          if (yellow2 === 1) {
+          if (yellow6 === 1) {
             yellowCorrect += 1;
           }
-          if (purple2 === 1) {
+          if (purple6 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 38) {
-          if (red5 === 1) {
+          if (red1 === 1) {
             redCorrect += 1;
           }
-          if (blue5 === 1) {
+          if (blue1 === 1) {
             blueCorrect += 1;
           }
-          if (green5 === 1) {
+          if (green1 === 1) {
             greenCorrect += 1;
           }
-          if (yellow5 === 1) {
+          if (yellow1 === 1) {
             yellowCorrect += 1;
           }
-          if (purple5 === 1) {
+          if (purple1 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 39) {
-          if (red3 === 1) {
+          if (red5 === 1) {
             redCorrect += 1;
           }
-          if (blue3 === 1) {
+          if (blue5 === 1) {
             blueCorrect += 1;
           }
-          if (green3 === 1) {
+          if (green5 === 1) {
             greenCorrect += 1;
           }
-          if (yellow3 === 1) {
+          if (yellow5 === 1) {
             yellowCorrect += 1;
           }
-          if (purple3 === 1) {
+          if (purple5 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 40) {
-          if (red1 === 1) {
+          if (red2 === 1) {
             redCorrect += 1;
           }
-          if (blue1 === 1) {
+          if (blue2 === 1) {
             blueCorrect += 1;
           }
-          if (green1 === 1) {
+          if (green2 === 1) {
             greenCorrect += 1;
           }
-          if (yellow1 === 1) {
+          if (yellow2 === 1) {
             yellowCorrect += 1;
           }
-          if (purple1 === 1) {
+          if (purple2 === 1) {
             purpleCorrect += 1;
           }
         }
+        
+        //real world action
+        
         if (qCount === 41) {
-          if (red4 === 1) {
+         if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue4 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green4 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow4 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple4 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 42) {
-          if (red3 === 1) {
+         if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue3 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green3 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow3 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple3 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 43) {
-          if (red5 === 1) {
+          if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue5 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green5 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow5 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple5 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 44) {
-          if (red2 === 1) {
+          if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue2 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green2 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow2 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple2 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 45) {
-          if (red6 === 1) {
+          if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue6 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green6 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow6 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple6 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 46) {
-          if (red1 === 1) {
+         if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue1 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green1 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow1 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple1 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 47) {
-          if (red5 === 1) {
+          if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue5 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green5 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow5 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple5 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 48) {
-          if (red4 === 1) {
+          if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue4 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green4 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow4 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple4 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 49) {
-          if (red2 === 1) {
+          if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue2 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green2 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow2 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple2 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
         if (qCount === 50) {
-          if (red6 === 1) {
+          if (red1 === 1 || red2 === 1 || red3 === 1) {
             redCorrect += 1;
           }
-          if (blue6 === 1) {
+          if (blue1 === 1 || blue2 === 1 || blue3 === 1) {
             blueCorrect += 1;
           }
-          if (green6 === 1) {
+          if (green1 === 1 || green2 === 1 || green3 === 1) {
             greenCorrect += 1;
           }
-          if (yellow6 === 1) {
+          if (yellow1 === 1 || yellow2 === 1 || yellow3 === 1) {
             yellowCorrect += 1;
           }
-          if (purple6 === 1) {
+          if (purple1 === 1 || purple2 === 1 || purple3 === 1) {
             purpleCorrect += 1;
           }
         }
@@ -1463,19 +1445,13 @@ var sketchProc = function(processingInstance) {
           console.log("over 70");
           var select = round(random(1, 3));
           if (select === 1) {
-            stringS = "Advance Two.";
+            stringS = "Advance One.";
             check();
           } else if (select === 2) {
             stringS = "Skip One.";
-            if (colorSet === 1) {
-              colorSet = 2;
-            } else if (colorSet === 2) {
-              colorSet = 3;
-            } else if (colorSet === 3) {
-              colorSet = 4;
-            } else if (colorSet === 4) {
-              colorSet = 5;
-            } else if (colorSet === 5) {
+            if (colorSet < 5) {
+              colorSet += 1;
+            } else if (colorSet > 5) {
               colorSet = 1;
             }
 
@@ -1754,9 +1730,9 @@ var sketchProc = function(processingInstance) {
         playRedX = boxDim / 2 - 15 + boxDim * 2;
       } else if (redCorrect === 23) {
         playRedX = boxDim / 2 - 15 + boxDim;
-      } else if (redCorrect > 23) {
+      } else if (redCorrect === 24) {
         playRedX = boxDim / 2 - 15;
-        
+        redCorrect = 0;
       }
 
       if (greenCorrect === 1) {
@@ -1807,6 +1783,7 @@ var sketchProc = function(processingInstance) {
         playGreenX = boxDim / 2 + boxDim;
       } else if (greenCorrect === 24) {
         playGreenX = boxDim / 2;
+        greenCorrect = 0;
       }
 
       if (blueCorrect === 1) {
@@ -1857,6 +1834,7 @@ var sketchProc = function(processingInstance) {
         playBlueX = boxDim / 2 + 15 + boxDim;
       } else if (blueCorrect === 24) {
         playBlueX = boxDim / 2 + 15;
+        blueCorrect = 0;
       }
 
       if (yellowCorrect === 1) {
@@ -1907,6 +1885,7 @@ var sketchProc = function(processingInstance) {
         playYellowX = boxDim / 2 + boxDim;
       } else if (yellowCorrect === 24) {
         playYellowX = boxDim / 2;
+        yellowCorrect = 0;
       }
 
       if (purpleCorrect === 1) {
@@ -1957,6 +1936,7 @@ var sketchProc = function(processingInstance) {
         playPurpleX = boxDim / 2 + boxDim;
       } else if (purpleCorrect === 24) {
         playPurpleX = boxDim / 2;
+        purpleCorrect = 0;
       }
 
       if (redX > (right / 2) - 120 && redX < (right / 2) - 120 + 60 && redY > (height / 2) - 70 && redY < (height / 2) - 30) {
@@ -2117,6 +2097,7 @@ var sketchProc = function(processingInstance) {
 
       //replicate movement for all four others, then questions
 
+      background(255, 255, 255);
 
       fill(255, 255, 255);
       stroke(0, 0, 0);
@@ -2190,7 +2171,8 @@ var sketchProc = function(processingInstance) {
 
       fill(0, 0, 0);
       var monospace = createFont("monospace");
-      textFont(monospace);
+      textFont(monospace, 10);
+      
       text(stringA, (right / 2) - 115, (height / 2) - 47);
       text(stringB, (right / 2) - 25, (height / 2) - 47);
       text(stringC, (right / 2) + 65, (height / 2) - 47);
