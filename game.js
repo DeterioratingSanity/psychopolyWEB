@@ -741,19 +741,19 @@ var win = function() {
           }
         }
         if (qCount === 9) {
-          if (red2 === 1) {
+          if (red1 === 1) {
             redCorrect += 1;
           }
-          if (blue2 === 1) {
+          if (blue1 === 1) {
             blueCorrect += 1;
           }
-          if (green2 === 1) {
+          if (green1 === 1) {
             greenCorrect += 1;
           }
-          if (yellow2 === 1) {
+          if (yellow1 === 1) {
             yellowCorrect += 1;
           }
-          if (purple2 === 1) {
+          if (purple1 === 1) {
             purpleCorrect += 1;
           }
         }
@@ -1475,10 +1475,16 @@ var win = function() {
             check();
           } else if (select === 2) {
             stringS = "Skip One.";
-            if (colorSet < 5) {
-              colorSet += 1;
-            } else if (colorSet > 5) {
+            if (colorSet === 1) {
+              colorSet = 3;
+            } else if (colorSet === 2) {
+              colorSet = 4;
+            } else if (colorSet === 3) {
+              colorSet = 5;
+            } else if (colorSet === 4) {
               colorSet = 1;
+            } else if (colorSet === 5) {
+              colorSet = 2;
             }
 
 
